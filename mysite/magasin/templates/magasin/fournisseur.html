@@ -1,0 +1,18 @@
+{% extends 'magasin/base.html' %}
+{% block content %} 
+ <div class="col-md-12 text-center">
+ <h2>List Fournisseur</h2>
+ </div> 
+
+ 
+ <table border="2">
+    {% for article in list %}
+    <tr>
+        <td>{{article.nom}} </td>
+        <td>{{article.adresse}} </td>
+        <td>{{article.email}} </td>
+        <td>{{article.telephone}} </td> 
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
